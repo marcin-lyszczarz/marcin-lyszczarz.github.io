@@ -1,0 +1,17 @@
+.projects {
+  padding: 64px 16px 84px;
+  &__header {
+    margin: 0;
+    padding-bottom: 32px;
+    color: $headerFont;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+  &__description{
+      color: $paragraphFont;
+      text-align: center;
+      padding-bottom: 46px;
+  }
+}
