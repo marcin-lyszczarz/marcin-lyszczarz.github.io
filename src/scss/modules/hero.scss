@@ -2,26 +2,69 @@
 
 .hero {
   padding: 74px 16px 88px;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 176px;
+  }
+  &__bubble {
+    position: absolute;
+    top: -26px;
+    left: calc(50% + 90px);
+  }
   &__image {
     box-sizing: content-box;
     height: 96px;
     width: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+    }
   }
   &__hello {
     display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      background: $helloColor;
+      padding: 16px 19px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      color: #ffffff;
+      border-radius: 16px;
+      position: relative;
+      &:after {
+        position: absolute;
+        top: 100%;
+        left: 32px;
+        content: "";
+        display: block;
+        height: 23px;
+        width: 17px;
+        background: url("../assets/img/speech_cloud.svg");
+      }
+    }
   }
   &__image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   &__header {
     color: $headerFont;
     font-size: 26px;
     line-height: 32px;
     text-align: center;
+    @media (min-width: $desktop) {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   &__special {
     color: #1070ca;
@@ -31,6 +74,12 @@
     margin-top: 16px;
     text-align: center;
     margin-bottom: 48px;
+    @media (min-width: $desktop) {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__contact {
     display: flex;
@@ -48,7 +97,6 @@
     line-height: 40px;
   }
   &__description {
-
     display: flex;
     justify-content: center;
     align-items: center;
