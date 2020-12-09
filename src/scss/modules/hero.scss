@@ -5,9 +5,11 @@
   @media (min-width: $tablet) {
     max-width: 768px;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 176px;
   }
+  @media (min-width: $desktop) {
+    max-width: 100%;
+  }
+
   &__bubble {
     position: absolute;
     top: -26px;
@@ -68,6 +70,7 @@
   }
   &__special {
     color: #1070ca;
+    white-space: nowrap;
   }
   &__paragraph {
     color: $paragraphFont;
@@ -82,14 +85,11 @@
     }
   }
   &__contact {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     width: 278px;
     height: 48px;
     color: #ffffff;
     background: #4da8ff;
-    padding: 4px;
+    padding: 4px 24px;
     border-radius: 64px;
     font-size: 20px;
     font-weight: bold;
@@ -97,17 +97,37 @@
     line-height: 40px;
   }
   &__description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 300;
+    text-align: center;
+    @media (min-width: $desktop) {
+      max-width: 786px;
+      margin: 0 auto;
+      position: relative;
+      &::after {
+        position: absolute;
+        left: 100%;
+        top: 0%;
+        content: "";
+        display: block;
+        background: url("../assets/img/arrow_right.svg");
+        width: 83px;
+        height: 255px;
+      }
+      &::before {
+        position: absolute;
+        right: 100%;
+        top: 0%;
+        content: "";
+        display: block;
+        background: url("../assets/img/arrow_left.svg");
+        width: 83px;
+        height: 255px;
+      }
+    }
   }
   &__links {
     color: #4da8ff;
     font-weight: bold;
     text-decoration: none;
+    white-space: nowrap;
   }
 }

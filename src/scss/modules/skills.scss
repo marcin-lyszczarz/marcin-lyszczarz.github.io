@@ -2,7 +2,7 @@
   background: #1070ca;
   color: white;
   padding: 64px 16px 88px;
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-top: 80px;
     padding-bottom: 176px;
   }
@@ -10,6 +10,8 @@
     @media (min-width: $desktop) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1184px;
+      margin: 0 auto;
     }
   }
   &__header {
@@ -17,7 +19,7 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       font-size: 48px;
       line-height: 56px;
     }

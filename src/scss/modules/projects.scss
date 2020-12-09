@@ -1,6 +1,6 @@
 .projects {
   padding: 64px 16px 84px;
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     padding-top: 80px;
     padding-bottom: 176px;
   }
@@ -11,9 +11,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 40px;
+      margin-bottom: 128px;
     }
   }
   &__header {
@@ -23,9 +24,10 @@
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       font-size: 48px;
       line-height: 56px;
+      margin-bottom: 40px;
     }
   }
 }
@@ -82,7 +84,7 @@
   display: grid;
   column-gap: 24px;
   row-gap: 24px;
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr;
   }
 }
