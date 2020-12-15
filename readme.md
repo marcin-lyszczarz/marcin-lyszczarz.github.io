@@ -1,12 +1,14 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://marcin-lyszczarz.github.io/og.png)
 
-# WTF Webpack Starter Kit 
+# MARCIN ŁYSZCZARZ - JUNIOR FRONTEN DEVELOPER 
 
-Simple toolkit for your static websites development.
+Portfolio website
 
-## How to use it?
+## TOOLS
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+-WTF Webpack starterkit
+-HTML + CSS + JS
+-GitHub API
 
 ## Available scripts
 
