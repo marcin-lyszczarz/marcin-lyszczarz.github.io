@@ -1,4 +1,4 @@
-![cover](https://marcin-lyszczarz.github.io/og.png)
+![cover](https://marcin-lyszczarz.github.io/og-wtf.png)
 
 # MARCIN ŁYSZCZARZ - JUNIOR FRONTEN DEVELOPER 
 
